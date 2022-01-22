@@ -1,0 +1,293 @@
+body{
+  background-color: rgb(245, 245, 245);
+  margin: 0px;
+  height: 2000px;
+  overflow-x: hidden;
+  transition: ease-in-out 1s background-color;
+
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(../../font/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+font-family: Raleway-Bold;
+src: url(../../font/Raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+font-family: Raleway-SemiBold;
+src: url(../../font/Raleway/Raleway-SemiBold.ttf);
+}
+
+.nav-bar{
+  background-color: rgba(88, 88, 88, 0.096); /*88*/
+  font-family: Raleway-Regular;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.096);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.061);
+  /*position: fixed;
+  overflow: hidden;
+  top: 0; /* At the top 
+  z-index: 99;
+  width: 100%;*/
+}
+
+.nav-bar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin: 1px 10px; /* DA SISTEMARE*/ 
+  padding: 20px;
+}
+
+.nav-bar a, p {
+  color: rgb(49, 49, 49);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.nav-bar p{
+  margin-top: 5px;
+}
+
+/*
+.hover-underline-animation {
+  position: relative;
+  color: rgb(49, 49, 49);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background-color: rgb(49, 49, 49);
+  transition: transform 0.25s ease-out;
+  margin-bottom: 25%;
+}
+
+.hover-underline-animation:hover {
+  color: #3676CB;
+}
+
+*/
+
+
+
+.header-title-top{
+  text-align: center;
+  font-weight: bolder;
+  font-family: Raleway-Bold; 
+  font-size: 100px;
+  margin: 10px;
+  color: #00BF59;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.header-title-bottom{
+  text-align: center;
+  font-weight: bolder;
+  font-family: Raleway-Bold;
+  font-size: 100px;
+  margin: 10px;
+  color: #00BF59;
+  left: 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.home-svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-svg-nav-bar{
+
+  margin-left: 5%;
+}
+
+.slider-info{
+text-align: center;
+font-family: Raleway-SemiBold;
+font-size: 25px;
+margin-top: 70px;
+color: #00BF59;
+}
+
+.arrow-svg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -10px;
+margin-bottom: 10%;
+}
+
+.zoom{
+  place-items:center;  
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.project-title{
+  text-align: center;
+  font-weight: bolder;
+  font-family: Raleway-Bold;
+  font-size: 100px;
+  margin: 10px;
+  color: #3676CB;
+}
+
+.slider-info-project{
+  text-align: center;
+  font-family: Raleway-SemiBold;
+  font-size: 25px;
+  margin-top: 70px;
+  color: #3676CB;
+}
+
+.arrow-svg-project{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
+li{
+  transition: transform ease-in-out 0.2s;
+  
+}
+
+li:hover {
+  transform: scale(1.1);
+  /*box-shadow: 10px 10px 10px 10px;
+  border-radius: 10px 10px ;*/
+}
+/*
+ul li:hover,
+ul li:hover a {
+  color: #3676CB;
+ 
+}*/
+
+li:hover p 
+{
+  color: #3676CB;
+}
+
+body.changeColor-home{
+  background-color: #00BF59;
+
+}
+
+.displayNone {
+  display: none;
+}
+/*
+a.go-top-image{
+  float: right;
+  margin-right: 2%;
+
+
+  
+  position: fixed;
+
+
+  z-index: 1000;
+
+
+
+
+
+}
+
+a.go-top-image.show {
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, opacity 0.5s ease 0s;
+}*/
+
+/*
+a.to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, opacity 0.5s ease 0s;
+}
+
+a.to-top {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+a.to-top {
+  position: fixed;
+
+  z-index: 1000;
+  outline: none !important;
+}*/
+
+.go-top-image {
+  position: fixed;
+  display: none;
+}
+/*
+.go-top-image:active img {
+
+}*/
+
+.go-top-image:hover img {
+  filter: invert(0.5);
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+
+}
+
+.home-text{
+  background-color: #00BF59;
+}
+
+.home-text h1{
+  padding-top: 3%;
+  text-align: center;
+  color: white;
+  font-family: Raleway-Bold;
+  text-transform: uppercase;
+  font-size: 90px;
+}
+
+.home-text p{
+  padding-bottom: 3%;
+  text-align: center;
+  color: white;
+  font-family: Raleway-SemiBold;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.home-text img{
+  width: 350px;
+  height: 350px;
+  padding-bottom: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease-in-out 0.3s border-radius;
+
+}
+
+.home-text img:hover{
+  border-radius: 25%;
+}

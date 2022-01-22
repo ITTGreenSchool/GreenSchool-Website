@@ -1,0 +1,12 @@
+arrow.svg da fare anche in blu per project.html
+
+REVISIONE ANIMAZIONE DELLA HOME
+-foglia che si ingrandisce con un click
+
+fare scritta home page sotto alla foglia
+
+fare uno sfondo più marcato sull'intestazione
+
+usare i tag HTML 5 tipo section
+
+vedere se fare in corsivo il titolo
