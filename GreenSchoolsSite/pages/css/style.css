@@ -1,7 +1,6 @@
 body{
   background-color: rgb(245, 245, 245);
   margin: 0px;
-  height: 2000px;
   overflow-x: hidden;
   transition: ease-in-out 1s background-color;
 
@@ -22,11 +21,22 @@ font-family: Raleway-SemiBold;
 src: url(../../font/Raleway/Raleway-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: Raleway-Light;
+  src: url(../../font/Raleway/Raleway-Light.ttf);
+  }
+
 .nav-bar{
-  background-color: rgba(88, 88, 88, 0.096); /*88*/
+  background-color: rgba(88, 88, 88, 0.041); /*88*/
+  /*background-color: rgb(245, 245, 245);*/
+  /*background-color: #262626;*/
+  /*background-color: hsl(148, 100%, 30%);*/
+  /*background-image: url(../../img/GreenSchoolsGeneralImage/182e1f28e2c723ede713d4dee929b368.png);
+  background-repeat:no-repeat;
+  background-size: cover;*/
   font-family: Raleway-Regular;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.096);
-  border-bottom: 2px solid rgba(128, 128, 128, 0.061);
+  /*border-bottom: 2px solid rgba(128, 128, 128, 0.061);*/
   /*position: fixed;
   overflow: hidden;
   top: 0; /* At the top 
@@ -55,7 +65,12 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
 
 .nav-bar p{
   margin-top: 5px;
+  /*color: white;*/
 }
+/*
+.nav-bar img{
+  filter: invert(1);
+}*/
 
 /*
 .hover-underline-animation {
@@ -121,6 +136,7 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
 
 .slider-info{
 text-align: center;
+/*font-family: Raleway-Regular;*/
 font-family: Raleway-SemiBold;
 font-size: 25px;
 margin-top: 70px;
@@ -133,6 +149,15 @@ margin-left: auto;
 margin-right: auto;
 margin-top: -10px;
 margin-bottom: 10%;
+transition: transform ease-in-out 0.2s;
+}
+
+.arrow-svg:hover{
+  transform: scale(1.2);
+}
+
+.scroll-home-page::after{
+  transition: transform ease-in-out 0.2s;
 }
 
 .zoom{
@@ -165,12 +190,12 @@ margin-bottom: 10%;
   margin-top: -10px;
 }
 
-li{
+.nav-bar li{
   transition: transform ease-in-out 0.2s;
   
 }
 
-li:hover {
+.nav-bar li:hover {
   transform: scale(1.1);
   /*box-shadow: 10px 10px 10px 10px;
   border-radius: 10px 10px ;*/
@@ -182,7 +207,7 @@ ul li:hover a {
  
 }*/
 
-li:hover p 
+.nav-bar li:hover p 
 {
   color: #3676CB;
 }
@@ -264,7 +289,6 @@ a.to-top {
   text-align: center;
   color: white;
   font-family: Raleway-Bold;
-  text-transform: uppercase;
   font-size: 90px;
 }
 
@@ -272,9 +296,9 @@ a.to-top {
   padding-bottom: 3%;
   text-align: center;
   color: white;
-  font-family: Raleway-SemiBold;
-  text-transform: uppercase;
+  font-family: Raleway-Light;
   font-size: 25px;
+  line-height: 150%;
 }
 
 .home-text img{
@@ -285,9 +309,103 @@ a.to-top {
   margin-left: auto;
   margin-right: auto;
   transition: ease-in-out 0.3s border-radius;
-
 }
 
 .home-text img:hover{
   border-radius: 25%;
+}
+
+
+.separate-line{
+  /*color: rgb(245, 245, 245);
+  margin: 0;
+  border: 0.1;
+  height: 1px;*/
+  display: inline-block;
+  height: 1px;
+  width: 550px;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@viewport{
+  zoom: 1.0;
+  width: extended-to-zoom;
+}
+
+@-ms-viewport{
+  width: extended-to-zoom;
+  zoom: 1.0;
+}
+
+
+footer{
+  background-color: rgba(88, 88, 88, 0.041); /*88*/
+  margin:0;
+  padding:0;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+  padding-bottom: 2%;
+}
+
+.footer-col ul{
+  margin-bottom: 0;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: red;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
 }
