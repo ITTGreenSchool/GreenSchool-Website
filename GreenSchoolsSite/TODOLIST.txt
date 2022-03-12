@@ -1,12 +1,22 @@
-arrow.svg da fare anche in blu per project.html
+DECIDERE I COLORI DELLE PAGINE RIMANENTI
 
-REVISIONE ANIMAZIONE DELLA HOME
--foglia che si ingrandisce con un click
+-gioco
 
-fare scritta home page sotto alla foglia
+-il progetto
 
-fare uno sfondo più marcato sull'intestazione
+-buone pratiche
 
-usare i tag HTML 5 tipo section
+IMPLEMENTARE ANIMAZIONI SU TUTTE LA PAGINE
 
-vedere se fare in corsivo il titolo
+-il progetto
+
+-gioco
+
+-lo studio
+
+-buone pratiche
+
+IMPLEMENTARE MATERIALI SU BUONE PRATICHE
+slideshow dei volantini
+presentazione delle buone pratiche
+
