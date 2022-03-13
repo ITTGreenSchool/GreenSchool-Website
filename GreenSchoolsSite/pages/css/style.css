@@ -336,7 +336,6 @@ a.to-top {
 }
 
 .home-text h1{
-  padding-top: 3%;
   text-align: center;
   color: white;
   font-family: Raleway-Bold;
@@ -917,7 +916,7 @@ footer ul{
   line-height: 150%;
 }
 
-.prj-text, .study-text, .goodPract-text, .game-text{
+.prj-text, .study-text, .goodPract-text, .game-text, .home-text{
   padding-top: 3%;
 }
 
