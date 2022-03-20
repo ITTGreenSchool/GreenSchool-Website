@@ -166,7 +166,8 @@ display: block;
 margin-left: 0;
 margin-right: 0;
 margin-top: 0;
-margin-bottom: 100px;
+margin-bottom: 45px;
+margin-top: 7px;
 transition: transform ease-in-out 0.2s;
 }
 
@@ -608,103 +609,107 @@ footer ul{
   margin-right: auto;
 
 }
-
+/*
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+/*DA SISTEMARE SLIDESHOW
+.slider {
   position: relative;
-  margin: auto;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 7px 7px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 7px 0 0 7px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.slide {
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: default;
-  height: 10px;
-  width: 10px;
-  margin: 0 1px;
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
   margin-bottom: 10px;
-  background-color: #bbb;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.6s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  outline: none;
 }
 
-.active{
-  background-color: #3a3a3a;
-  cursor: default;
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+
+/* Backgorund Images 
+ 
+.slide:first-child {
+  background-image: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
+    center top/cover;
 }
+.slide:nth-child(2) {
+  background: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
+    center top/cover;
+} */
 
 .study-text h1{
   text-align: center;
@@ -890,7 +895,7 @@ footer ul{
 }
 
 .prj-text p{
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   text-align: center;
   color: white;
   font-family: Raleway-Light;
@@ -941,4 +946,101 @@ footer ul{
   font-size: 35px;
   text-align: center;
   padding: 3%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 7px 7px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 7px 0 0 7px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: default;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  margin-bottom: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{
+  background-color: #3a3a3a;
+  cursor: default;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
 }
