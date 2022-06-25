@@ -34,7 +34,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   src: url(../../font/Raleway/Raleway-Medium.ttf);
 }
 
-/*
 .hover-underline-animation {
   position: relative;
   color: rgb(49, 49, 49);
@@ -115,10 +114,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
 }
 
 .separate-line{
-  /*color: rgb(245, 245, 245);
-  margin: 0;
-  border: 0.1;
-  height: 1px;*/
   display: inline-block;
   height: 1px;
   width: 550px;
@@ -143,16 +138,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   zoom: 1.0;
 }
 
-/*
-.study-svg{
-  transition: ease-in-out 0.2s;
-}
-
-.study-svg:hover{
-  transform: scale(1.1);
-  background-image: url(../../img/GreenSchoolsGeneralcon/study-blue-hover.svg);
-}*/
-
 .study-svg, .proj-svg{
   display: block;
   margin-left: auto;
@@ -168,10 +153,9 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   margin-left: auto;
   margin-right: auto;
 }
-/*
+
 * {box-sizing:border-box}
 
-/*DA SISTEMARE SLIDESHOW
 .slider {
   position: relative;
   overflow: hidden;
@@ -253,24 +237,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   }
 }
 
-
-
-/* Backgorund Images 
- 
-.slide:first-child {
-  background-image: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
-    center top/cover;
-}
-.slide:nth-child(2) {
-  background: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
-    center top/cover;
-}
-.slide:nth-child(3) {
-  background: url('../../img/GreenSchoolsGeneralImage/goodpractice-slideshow/1stslide.png') no-repeat
-    center top/cover;
-} */
-
-/*LOADING ANIMATION*/
 .loader{
   top: 0;
   left: 0; 
@@ -384,18 +350,15 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next, .next-chisiamo {
   right: 0;
   border-radius: 50px 0 0 50px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover, .prev-chisiamo:hover, .next-chisiamo:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -406,7 +369,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -415,7 +377,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot, .dot-chisiamo {
   cursor: default;
   height: 10px;
@@ -433,7 +394,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   cursor: default;
 }
 
-/* Fading animation */
 .fade, .fade-chisiamo {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2s;
@@ -464,7 +424,7 @@ iframe.center, button.center {
   margin-left: auto;
   margin-right: auto;
 }
-/*
+
 .button-link .center{
   display: block;
 
@@ -507,7 +467,6 @@ iframe.center, button.center {
   font-family: Raleway-Light;
   font-size: 30px;
   padding: 20px;
-  /*box-shadow: 0px 7px rgb(112, 112, 112);*/
 }
 
 .button-link-other-resources > a{
@@ -531,6 +490,3 @@ iframe.center, button.center {
   background-color: #008e42;
   
 }
-
-/* FINISH LIMIT CSS */
-

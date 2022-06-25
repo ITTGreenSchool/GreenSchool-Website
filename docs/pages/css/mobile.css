@@ -89,7 +89,6 @@
     font-size: 20px !important;
     padding: 15px !important;
     margin-bottom: 20px;
-    /*box-shadow: 0px 7px rgb(112, 112, 112);*/
   }
 
   
@@ -222,10 +221,6 @@
       font-size: 20px !important;
     }
   
-    /*.footer-col{
-      width: min(600px, 100%)
-    }*/
-  
     .limit-items{
       width: min(800px, 100%) 
     }
@@ -299,9 +294,6 @@
     .limit-content{
       width: 100%;
     }
-
-    /*Phase*/
-    /* START phase CSS */
  
   .phase-section h1{
     font-size: 50px;

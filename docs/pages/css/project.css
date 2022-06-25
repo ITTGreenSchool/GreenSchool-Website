@@ -35,8 +35,6 @@
     font-size: 25px;
     line-height: 150%;
 }
-
-/* START LIMIT CSS */
  
 .limit-section h1{
     text-align: center;
@@ -189,7 +187,6 @@
 .teamPeople {
     align-items: flex-start;
     display: flex;
-    /*justify-content: space-between;*/
     margin-left: 17%;
     margin-right: 17%;
 }
