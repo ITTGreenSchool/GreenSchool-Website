@@ -56,8 +56,6 @@ src: url(../../font/Raleway/Raleway-SemiBold.ttf);
   color: #3676CB;
 }
 
-*/
-
 .slider-info{
   text-align: center;
   /*font-family: Raleway-Regular;*/
@@ -417,6 +415,12 @@ iframe{
   margin: auto;
   align-items: center;
   margin-bottom: 2%;
+}
+
+/*Center the iframe*/
+iframe{
+  display: block;
+  margin: 0 auto;
 }
 
 iframe.center, button.center {
