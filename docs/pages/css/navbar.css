@@ -1,22 +1,23 @@
 .nav{
     font-family: Raleway-Light;
-    height: 80px;
     width: 100%;
     top: 0;
     width: 100%;
     position: fixed;
     overflow: hidden;
     z-index: 99;
+    display: flex;
+    justify-content: space-between;
 }
 
 label.logo{
     color: white;
     font-size: 35px;
-    line-height: 100px;
     padding: 0 50px;
     font-family: Raleway-Medium;
     user-select: none;
-
+    display: flex;
+    align-items: center;
 }
 
 .nav ul{
