@@ -1,7 +1,11 @@
-$(document).ready(function(){
+let sideMenuOpen = false;
 
-    $(".threelines").click(function(){
-        $(".nav").css("background-color" , "#b96aff")
-    });
+function toggleSideMenu() {
+    sideMenuOpen = !sideMenuOpen;
 
-});
+    if (sideMenuOpen) {
+        document.getElementById("main-navbar-section").classList.add("open");
+    } else {
+        document.getElementById("main-navbar-section").classList.remove("open");
+    }
+}

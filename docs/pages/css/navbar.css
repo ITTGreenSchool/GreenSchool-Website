@@ -1,127 +1,156 @@
-.nav{
-    font-family: Raleway-Light;
-    width: 100%;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-    z-index: 99;
+#full-navbar {
+	font-family: Raleway-Light;
+	width: 100%;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#minimized-navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-label.logo{
-    color: white;
-    font-size: 35px;
-    padding: 0 50px;
-    font-family: Raleway-Medium;
-    user-select: none;
+#main-navbar-section {
     display: flex;
     align-items: center;
 }
 
-.nav ul{
-    float: right;
-    margin-right: 20px;
+#main-navbar-section .main-navbar-link {
+	line-height: 80px;
+	color: white;
 }
 
-.nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: -15px 15px;
+#main-navbar-section li {
+    display: flex;
+	align-items: center;
 }
 
-.nav ul li .nav-link{
-    color: white;
-    font-size: 19px;
+#main-navbar-section .main-navbar-link.act,
+.main-navbar-link:hover {
+	font-weight: 900;
 }
 
-.nav-link.act, .nav-link:hover{
-    font-weight: 900;
+#main-navbar-section a {
+	text-decoration: none;
 }
 
-.checkbtn{
-    font-size: 30px;
+#sidemenu-opener {
+	display: none;
+	font-size: 30px;
     color: #ffffff;
     float: right;
-    line-height: 90px;
-    margin-right: 40px;
     cursor: pointer;
-    display: none;
 }
 
-.nav a{
-    text-decoration: none;
+@media (orientation: landscape) {
+    #main-navbar-section {
+        flex-direction: row;
+        gap: 3rem;
+        margin: 0 3rem;
+    }
+
+    #minimized-navbar .logo {
+        color: white;
+        padding: 0 50px;
+        font-family: Raleway-Medium;
+        user-select: none;
+    }
+
+	#main-navbar-section .main-navbar-link {
+		overflow: hidden;
+	    font-size: 19px;
+	}
+
+	body {
+		padding-top: 0px !important;
+	}
+    
+    .floating-dropdown-list {
+        display: none;
+    }
+
+    .floating-dropdown-list-opener:hover .floating-dropdown-list {
+        display: flex;
+    }
     
 }
 
-#check{
-    display: none;
-}
+@media (orientation: portrait) {
 
-.threelines{
-    user-select: none;
-}
+	:root {
+		--minimized-navbar-height: 4rem;
+	}
 
-@media  (max-width: 952px){
+	#sidemenu-opener {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-    label.logo{
-        font-size: 30px;
-        padding-left: 15px;
-        padding-top: 50px !important;
-    }
-
-    .nav ul li .nav-link{
-        font-size: 30px;
-        padding-bottom: 10%;
-        overflow: hidden;
-    }
-
-    body{
-        padding-top: 0px !important;
-    }
-
-}
-
-@media  (max-width: 858px){
-
-    .checkbtn{
-        display: block !important;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav ul{
-        position: fixed;
+    #minimized-navbar {
         width: 100%;
-        height: 100vh;
-        top: 63px;
-        left: 100%;
-        text-align: center;
-        z-index: 100;
-        transition: all 0.5s;
-        display: block;
+        padding: 0 1rem;
+		height: var(--minimized-navbar-height);
     }
 
-    .nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+	#main-navbar-section {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+		width: 100%;
+		bottom: 0;
+		top: var(--minimized-navbar-height);
+		left: 100%;
+		text-align: center;
+		z-index: 100;
+		transition: all 0.5s;
+		margin: 0;
+        padding: 0;
+	}
+
+    #main-navbar-section li {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .nav ul li a{
-        font-size: 20px;
-        /*eliminare sottolineatura*/
-        text-decoration: none !important;
-    }
+	#main-navbar-section .main-navbar-link {
+		flex-direction: column;
+		display: flex;
+		line-height: 30px;
+		font-size: 20px;
+		/*eliminare sottolineatura*/
+		text-decoration: none !important;
+	}
 
-    .nav-link:hover, .nav-link.act{
-        background: none;
+	#main-navbar-section .main-navbar-link:hover,
+	#main-navbar-section .main-navbar-link.act {
+		background: none;
+	}
 
-    }
+	#main-navbar-section.open {
+		left: 0;
+	}
 
-    #check:checked ~ ul{
-        left: 0;
-    }
-    
+}
+
+
+.floating-dropdown-list-opener {
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.floating-dropdown-list {
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: space-around;
+	padding: 1rem 0;
+	margin: 0;
 }

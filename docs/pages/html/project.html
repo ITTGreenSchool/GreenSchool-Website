@@ -21,20 +21,27 @@
         <img src="../../img/GreenSchoolsLoadingAnimation/animation-project.gif" alt="loading-animation">
     </div>
 
-    <nav class="nav" style="background-color: #FF6D4B;">
-        
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <img src="../../img/GreenSchoolsButton/3lines.png" alt="3lines">
-        </label>
-        <label class="logo"><a href="http://www.iisvittorioveneto.edu.it/" target="_blank"><img src="../../img/GreenSchoolsButton/iisvv.png" alt=""></a></label>
+    <nav id="full-navbar" style="background-color: #FF6D4B;">
+      
+        <nav id="minimized-navbar">
+            <!--Chehckbox to open side menu on portrait view-->
+            <img src="../../img/GreenSchoolsButton/3lines.png" alt="3lines" onclick="toggleSideMenu()" id="sidemenu-opener">
+            <label class="logo"><a href="http://www.iisvittorioveneto.edu.it/" target="_blank"><img src="../../img/GreenSchoolsButton/iisvv.png" alt=""></a></label>        
+        </nav>
 
-        <ul style="background: #FF6D4B;">
-            <li><a class="nav-link" href="../../index.html">Home</a></li>
-            <li><a class="act nav-link" href="./project.html">Il Progetto</a></li>
-            <li><a class="nav-link" href="./study.html">Lo Studio</a></li>
-            <li><a class="nav-link" href="./goodPractise.html">Buone Pratiche</a></li>
-            <li><a class="nav-link" href="./game.html">Il Gioco</a></li>
+        <ul id="main-navbar-section" style="background-color: #FF6D4B">
+            <li><a class="act main-navbar-link" href="../../index.html">Home</a></li>
+            <li><a class="main-navbar-link" href="./project.html">Il Progetto</a></li>
+            <li><a class="main-navbar-link" href="./study.html">Lo Studio</a></li>
+            <li><a class="main-navbar-link" href="./goodPractise.html">Buone Pratiche</a></li>
+            <li><a class="main-navbar-link" href="./game.html">Materiale</a></li>
+            <li class="floating-dropdown-list-opener">
+                <a href="#" class="main-navbar-link">Competizioni</a>
+                <ul class="floating-dropdown-list">
+                    <li href="#">X</li>
+                    <li href="#">IX</li>
+                </ul>
+            </li>
         </ul>
 
     </nav>
@@ -445,6 +452,7 @@
 
 <script type="text/javascript" src="../js/slideshow.js"></script>
 <script type="text/javascript" src="../js/slideshow-chisiamo.js"></script>
+<script type="text/javascript" src="../js/navbar.js"></script>
 
 <script type="text/javascript" src="../js/go-top-image-fade-animation.js"></script>
 
