@@ -54,6 +54,7 @@
         flex-direction: row;
         gap: 3rem;
         margin: 0 3rem;
+		overflow-x: scroll;
     }
 
     #minimized-navbar .logo {
@@ -64,7 +65,7 @@
     }
 
 	#main-navbar-section .main-navbar-link {
-		overflow: hidden;
+		white-space: nowrap;
 	    font-size: 19px;
 	}
 
