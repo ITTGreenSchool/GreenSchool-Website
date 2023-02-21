@@ -1,5 +1,6 @@
 #full-navbar {
 	font-family: Raleway-Light;
+	color: white;
 	width: 100%;
 	top: 0;
 	width: 100%;
@@ -44,12 +45,17 @@
 #sidemenu-opener {
 	display: none;
 	font-size: 30px;
-    color: #ffffff;
     float: right;
     cursor: pointer;
 }
 
+
 @media (orientation: landscape) {
+	#full-navbar {
+		font-size: 19px;
+		white-space: nowrap;
+	}
+
     #main-navbar-section {
         flex-direction: row;
         gap: 3rem;
@@ -59,17 +65,15 @@
 		background: none !important;
     }
 
+	#minimized-navbar {
+		padding: 0 3rem;
+		gap: 3rem;
+	}
+
     #minimized-navbar .logo {
-        color: white;
-        padding: 0 50px;
         font-family: Raleway-Medium;
         user-select: none;
     }
-
-	#main-navbar-section .main-navbar-link {
-		white-space: nowrap;
-	    font-size: 19px;
-	}
 
 	body {
 		padding-top: 0px !important;
@@ -89,6 +93,10 @@
 
 	:root {
 		--minimized-navbar-height: 4rem;
+	}
+
+	#full-navbar {
+		font-size: 20px;
 	}
 
 	#sidemenu-opener {
@@ -127,7 +135,6 @@
 		flex-direction: column;
 		display: flex;
 		line-height: 30px;
-		font-size: 20px;
 		/*eliminare sottolineatura*/
 		text-decoration: none !important;
 	}
@@ -147,7 +154,6 @@
 .floating-dropdown-list-opener {
 	flex-direction: column;
 	align-items: center;
-	color: white;
 }
 
 .floating-dropdown-list {
