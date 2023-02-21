@@ -55,6 +55,8 @@
         gap: 3rem;
         margin: 0 3rem;
 		overflow-x: scroll;
+		/* Prevent the background image from moving when a link is selected */
+		background: none !important;
     }
 
     #minimized-navbar .logo {
