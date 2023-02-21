@@ -23,7 +23,6 @@
 }
 
 #main-navbar-section .main-navbar-link {
-	line-height: 80px;
 	color: white;
 }
 
@@ -58,7 +57,7 @@
     #main-navbar-section {
         flex-direction: row;
         gap: 3rem;
-        margin: 0 3rem;
+        padding: 1rem 3rem;
 		overflow-x: scroll;
 		/* Prevent the background image from moving when a link is selected */
 		background: none !important;
