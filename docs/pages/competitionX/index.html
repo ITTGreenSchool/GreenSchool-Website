@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../common/css/navbar.css">
+	<script defer src="../common/js/navbar.js"></script>
+
+	<title>Home</title>
+</head>
+<body>
+	<nav id="full-navbar" style="background-color: #00BF59;">
+      
+        <nav id="minimized-navbar">
+            <!--Chehckbox to open side menu on portrait view-->
+            <label class="logo"><a href="http://www.iisvittorioveneto.edu.it/" target="_blank"><img src="../../img/GreenSchoolsButton/iisvv.png" alt=""></a></label>
+            <div>Competizione IX</div>
+            <img src="../../img/GreenSchoolsButton/3lines.png" alt="3lines" onclick="toggleSideMenu()" id="sidemenu-opener">
+        </nav>
+
+        <ul id="main-navbar-section" style="background-color: #00BF59">
+            <li><a class="act main-navbar-link" href="./index.html">Home</a></li>
+            <li class="floating-dropdown-list-opener">
+                <a href="#" class="main-navbar-link">Competizioni</a>
+                <ul class="floating-dropdown-list">
+                    <li><a class="main-navbar-link" href="./index.html">X</a></li>
+                    <li><a class="main-navbar-link" href="../competitionIX/">IX</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+</body>
+</html>
