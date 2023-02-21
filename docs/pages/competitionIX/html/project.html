@@ -6,35 +6,46 @@
     <meta charset="utf-8" lang="it">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/project.css" type="text/css">
-    <link rel="stylesheet" href="../css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="../css/arrow.css" type="text/css">
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/mobile.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="shortcut icon" type="image/png" href="../../img/GreenSchoolsFavIcon/GS-PROFILE-IMAGE.jpg">
+    <link rel="shortcut icon" type="image/png" href="../../../img/GreenSchoolsFavIcon/GS-PROFILE-IMAGE.jpg">
+
+    <!------------------------------------SUPPORTO--------------------------------------------->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!----------------------------------------------------------------------------------------->
+    
+    <script defer type="text/javascript" src="../js/slideshow.js"></script>
+    <script defer type="text/javascript" src="../js/slideshow-chisiamo.js"></script>
+    <script defer type="text/javascript" src="../../common/js/navbar.js"></script>
+    
+    <script defer type="text/javascript" src="../js/go-top-image-fade-animation.js"></script>
 
 </head>
 <body>
 
     <div class="loader hidden">
-        <img src="../../img/GreenSchoolsLoadingAnimation/animation-project.gif" alt="loading-animation">
+        <img src="../../../img/GreenSchoolsLoadingAnimation/animation-project.gif" alt="loading-animation">
     </div>
 
     <nav id="full-navbar" style="background-color: #FF6D4B;">
       
         <nav id="minimized-navbar">
             <!--Chehckbox to open side menu on portrait view-->
-            <img src="../../img/GreenSchoolsButton/3lines.png" alt="3lines" onclick="toggleSideMenu()" id="sidemenu-opener">
-            <label class="logo"><a href="http://www.iisvittorioveneto.edu.it/" target="_blank"><img src="../../img/GreenSchoolsButton/iisvv.png" alt=""></a></label>        
+            <img src="../../../img/GreenSchoolsButton/3lines.png" alt="3lines" onclick="toggleSideMenu()" id="sidemenu-opener">
+            <label class="logo"><a href="http://www.iisvittorioveneto.edu.it/" target="_blank"><img src="../../../img/GreenSchoolsButton/iisvv.png" alt=""></a></label>        
         </nav>
 
         <ul id="main-navbar-section" style="background-color: #FF6D4B">
-            <li><a class="main-navbar-link" href="../../index.html">Home</a></li>
+            <li><a class="main-navbar-link" href="../index.html">Home</a></li>
             <li><a class="act main-navbar-link" href="./project.html">Il Progetto</a></li>
             <li><a class="main-navbar-link" href="./study.html">Lo Studio</a></li>
             <li><a class="main-navbar-link" href="./goodPractise.html">Buone Pratiche</a></li>
-            <li><a class="main-navbar-link" href="./game.html">Materiale</a></li>
+            <li><a class="main-navbar-link" href="./game.html">Il Gioco</a></li>
             <li class="floating-dropdown-list-opener">
                 <a href="#" class="main-navbar-link">Competizioni</a>
                 <ul class="floating-dropdown-list">
@@ -47,11 +58,11 @@
     </nav>
 
     <div>
-        <img src="../../img/GreenSchoolsGeneralcon/project.svg" alt="study-page-image" class="proj-svg">
+        <img src="../../../img/GreenSchoolsGeneralcon/project.svg" alt="study-page-image" class="proj-svg">
         <p class="project-title" style="margin-bottom: 10px;">IL PROGETTO</p>
         <p class="slider-info-project" style="color: #FF6D4B">SCORRI PER INIZIARE</p>
         <div class="scroll-page-div" >
-            <a href="#prj-text" class="scroll-home-page"><img src="../../img/GreenSchoolsGeneralcon/arrow-orange.svg" alt="arrow" class="arrow-svg"></a>
+            <a href="#prj-text" class="scroll-home-page"><img src="../../../img/GreenSchoolsGeneralcon/arrow-orange.svg" alt="arrow" class="arrow-svg"></a>
         </div>    
     </div>
     
@@ -64,15 +75,15 @@
         <div class="slideshow-container" data-aos="fade-in">
 
             <div class="mySlides fade">
-                <img class="slideshow-image" src="../../img/GreenSchoolsGeneralImage/prj-slideshow/1st.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/prj-slideshow/1st.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img class="slideshow-image" src="../../img/GreenSchoolsGeneralImage/prj-slideshow/2nd.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/prj-slideshow/2nd.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img class="slideshow-image" src="../../img/GreenSchoolsGeneralImage/prj-slideshow/3rd.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/prj-slideshow/3rd.png" style="width:100%">
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -103,7 +114,7 @@
                
                     <div class="limit-image">
                         
-                        <img src="../../img/GreenSchoolsLimit/2271.png">
+                        <img src="../../../img/GreenSchoolsLimit/2271.png">
 
                     </div>
 
@@ -118,7 +129,7 @@
                
                     <div class="limit-image">
                         
-                        <img src="../../img/GreenSchoolsLimit/autonomy.png">
+                        <img src="../../../img/GreenSchoolsLimit/autonomy.png">
 
                     </div>
 
@@ -134,7 +145,7 @@
                
                     <div class="limit-image">
                         
-                        <img src="../../img/GreenSchoolsLimit/power.png">
+                        <img src="../../../img/GreenSchoolsLimit/power.png">
 
                     </div>
 
@@ -149,7 +160,7 @@
                
                     <div class="limit-image">
                         
-                        <img src="../../img/GreenSchoolsLimit/storagesystem.png">
+                        <img src="../../../img/GreenSchoolsLimit/storagesystem.png">
 
                     </div>
 
@@ -165,7 +176,7 @@
                
                     <div class="limit-image">
                         
-                        <img src="../../img/GreenSchoolsLimit/solar panel.png">
+                        <img src="../../../img/GreenSchoolsLimit/solar panel.png">
 
                     </div>
 
@@ -191,23 +202,23 @@
             <div class="slideshow-container-chisiamo" data-aos="fade-in">
 
             <div class="mySlides-chisiamo fade-chisiamo">
-                <img class="slideshow-image" src="../../img/GreenSchoolsChiSiamoSlideshow/IMG_1435.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsChiSiamoSlideshow/IMG_1435.png" style="width:100%">
             </div>
 
             <div class="mySlides-chisiamo fade-chisiamo">
-                <img class="slideshow-image" src="../../img/GreenSchoolsChiSiamoSlideshow/DSC_0482.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsChiSiamoSlideshow/DSC_0482.png" style="width:100%">
             </div>
 
             <div class="mySlides-chisiamo fade-chisiamo">
-                <img class="slideshow-image" src="../../img/GreenSchoolsChiSiamoSlideshow/IMG_1455.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsChiSiamoSlideshow/IMG_1455.png" style="width:100%">
             </div>
 
             <div class="mySlides-chisiamo fade-chisiamo">
-                <img class="slideshow-image" src="../../img/GreenSchoolsChiSiamoSlideshow/DSC_0487.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsChiSiamoSlideshow/DSC_0487.png" style="width:100%">
             </div>
 
             <div class="mySlides-chisiamo fade-chisiamo">
-                <img class="slideshow-image" src="../../img/GreenSchoolsChiSiamoSlideshow/IMG_1440.png" style="width:100%">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsChiSiamoSlideshow/IMG_1440.png" style="width:100%">
             </div>
             
             <a class="prev-chisiamo" onclick="plusSlides2(-1)">&#10094;</a>
@@ -244,7 +255,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/ghironi.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/ghironi.png">
                 <p class="personTeamName">Ghironi Alessandro</p>
                 <p class="personTeamText">Creazione sito web e gestione social</p>
 
@@ -252,7 +263,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/sonego-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/sonego-min.png">
                 <p class="personTeamName">Sonego Alessio</p>
                 <p class="personTeamText">Creazione sito web e gestione social</p>
 
@@ -264,7 +275,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/chiesurin-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/chiesurin-min.png">
                 <p class="personTeamName">Chiesurin Diego</p>
                 <p class="personTeamText">Creazione gioco</p>
 
@@ -272,7 +283,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/ballarin-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/ballarin-min.png">
                 <p class="personTeamName">Ballarin Pietro</p>
                 <p class="personTeamText">Creazione gioco</p>
 
@@ -284,7 +295,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/tomasi-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/tomasi-min.png">
                 <p class="personTeamName">Tomasi Samuele</p>
                 <p class="personTeamText">Aiuto creazione sito<br>e realizzazione volantini</p>
 
@@ -292,7 +303,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/monetto-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/monetto-min.png">
                 <p class="personTeamName">Monetto Marco</p>
                 <p class="personTeamText">Aiuto creazione sito<br>e realizzazione volantini</p>
 
@@ -304,7 +315,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Amerigo Borgato-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Amerigo Borgato-min.png">
                 <p class="personTeamName">Borgato Amerigo</p>
                 <p class="personTeamText">Presentazione <br>"Efficienza energetica" <br>e "Buone norme"</p>
 
@@ -312,7 +323,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Andrea Bit-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Andrea Bit-min.png">
                 <p class="personTeamName">Bit Andrea</p>
                 <p class="personTeamText">Presentazione <br>"I numeri non contano"<br>‎‎</p>
                                                                 <!--DA FIXARE-->
@@ -324,7 +335,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/De Luca Riccardo-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/De Luca Riccardo-min.png">
                 <p class="personTeamName">De Luca Riccardo</p>
                 <p class="personTeamText">Presentazione "L'auto ricaricabile<br>come un cellulare"</p>
 
@@ -332,7 +343,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Davide Maria Meneghin-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Davide Maria Meneghin-min.png">
                 <p class="personTeamName">Meneghin Davide Maria</p>
                 <p class="personTeamText">Presentazione "Impianto fotovoltaico"<br>e "Buone norme"</p>
 
@@ -344,7 +355,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/salvador.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/salvador.png">
                 <p class="personTeamName">Salvador Alex</p>
                 <p class="personTeamText">Presentazione "La combustione"</p>
 
@@ -352,7 +363,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Marco Baldassar.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Marco Baldassar.png">
                 <p class="personTeamName">Baldassar Marco</p>
                 <p class="personTeamText">Presentazione "Potenze a confronto"</p>
 
@@ -364,7 +375,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Nicola Falcomer-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Nicola Falcomer-min.png">
                 <p class="personTeamName">Falcomer Nicola</p>
                 <p class="personTeamText">Presentazione "Mobilità sostenibile"</p>
 
@@ -372,7 +383,7 @@
 
             <div class="personTeam" data-aos="fade-down">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/angelo_falcomer.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/angelo_falcomer.png">
                 <p class="personTeamName">Falcomer Angelo</p>
                 <p class="personTeamText">Presentazione "Sistema di accumulo"</p>
 
@@ -384,7 +395,7 @@
 
             <div class="personTeam" data-aos="fade-up">
 
-                <img class="personImage" src="../../img/GreenSchoolsTeam/single/comp/Paolo Lucchetta-min.png">
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Paolo Lucchetta-min.png">
                 <p class="personTeamName">Lucchetta Paolo</p>
                 <p class="personTeamText">Presentazione "L'auto ricaricabile<br>come un cellulare" e "Buone norme"</p>
 
@@ -422,10 +433,10 @@
                     <ul>
 
                         <li class="footer-link"><a href="" target="_blank"></a></li>
-                        <a href="https://www.facebook.com/profile.php?id=100077519273791" target="_blank"><img src="../../img/GreenSchoolsSocialIcon/svg/facebook.svg" alt="facebook" class="social-icon"></a>
-                        <a href="https://www.instagram.com/energyteamittvv/" target="_blank"><img src="../../img/GreenSchoolsSocialIcon/svg/instagram.svg" alt="instagram" class="social-icon"></a>
-                        <a href="https://twitter.com/EnergyTeamITTVV" target="_blank"><img src="../../img/GreenSchoolsSocialIcon/svg/twitter.svg" alt="twitter" class="social-icon"></a>
-                        <a href="https://www.tiktok.com/@energyteamiisvv" target="_blank"><img src="../../img/GreenSchoolsSocialIcon/svg/tiktok.svg" alt="tik-tok" class="social-icon"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100077519273791" target="_blank"><img src="../../../img/GreenSchoolsSocialIcon/svg/facebook.svg" alt="facebook" class="social-icon"></a>
+                        <a href="https://www.instagram.com/energyteamittvv/" target="_blank"><img src="../../../img/GreenSchoolsSocialIcon/svg/instagram.svg" alt="instagram" class="social-icon"></a>
+                        <a href="https://twitter.com/EnergyTeamITTVV" target="_blank"><img src="../../../img/GreenSchoolsSocialIcon/svg/twitter.svg" alt="twitter" class="social-icon"></a>
+                        <a href="https://www.tiktok.com/@energyteamiisvv" target="_blank"><img src="../../../img/GreenSchoolsSocialIcon/svg/tiktok.svg" alt="tik-tok" class="social-icon"></a>
     
                     </ul>
 
@@ -444,16 +455,4 @@
     </script>
 
 </body>
-
-    <!------------------------------------SUPPORTO--------------------------------------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!----------------------------------------------------------------------------------------->
-
-<script type="text/javascript" src="../js/slideshow.js"></script>
-<script type="text/javascript" src="../js/slideshow-chisiamo.js"></script>
-<script type="text/javascript" src="../js/navbar.js"></script>
-
-<script type="text/javascript" src="../js/go-top-image-fade-animation.js"></script>
-
 </html>

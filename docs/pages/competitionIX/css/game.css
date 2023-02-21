@@ -1,9 +1,9 @@
 .background-navbar{
-    background-image: url('../../img/GreenSchoolsGeneralImage/grass.png') !important;
+    background-image: url('../../../img/GreenSchoolsGeneralImage/grass.png') !important;
 }
 
 .game-background{
-    background-image: url('../../img/GreenSchoolsGeneralImage/Untitled-1.png') !important;
+    background-image: url('../../../img/GreenSchoolsGeneralImage/Untitled-1.png') !important;
 }
 
 .loaderGame{
