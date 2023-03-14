@@ -59,7 +59,7 @@
         flex-direction: row;
         gap: 3rem;
         padding: 1rem 3rem;
-		overflow-x: scroll;
+		overflow-x: auto;
 		/* Prevent the background image from moving when a link is selected */
 		background: none !important;
     }
