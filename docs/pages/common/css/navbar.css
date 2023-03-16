@@ -1,3 +1,7 @@
+:root {
+	--logo-heigth: 3rem;
+}
+
 #full-navbar {
 	font-family: Raleway-Light;
 	color: white;
@@ -47,6 +51,12 @@
 	cursor: pointer;
 }
 
+#minimized-navbar .logo {
+	aspect-ratio: 1;
+	object-fit: scale-down;
+	height: var(--logo-heigth);
+}
+
 @media (orientation: landscape) {
 	#full-navbar {
 		font-size: 19px;
@@ -57,7 +67,7 @@
 
 	#navbar-competition-title,
 	#main-navbar-section > li > .main-navbar-link {
-		padding: 1rem 0;
+		padding: calc(calc(var(--logo-heigth) - 1em) / 2) 0;
 	}
 
 	#full-navbar > nav {
