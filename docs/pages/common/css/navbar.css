@@ -58,16 +58,23 @@
 }
 
 @media (orientation: landscape) {
+	:root {
+		--full-navbar-vertical-padding: 1rem;
+		--full-navbar-height: calc(var(--logo-heigth) + calc(var(--full-navbar-vertical-padding) * 2));
+	}
+
 	#full-navbar {
 		font-size: 19px;
 		white-space: nowrap;
-		padding: 1rem 2rem;
+		padding: var(--full-navbar-vertical-padding) 2rem;
 		gap: 3rem;
 	}
 
 	#navbar-competition-title,
 	#main-navbar-section > li > .main-navbar-link {
-		padding: calc(calc(var(--logo-heigth) - 1em) / 2) 0;
+		height: var(--logo-heigth);
+		display: flex;
+		align-items: center;
 	}
 
 	#full-navbar > nav {
@@ -84,6 +91,7 @@
 
 	#minimized-navbar {
 		gap: 3rem;
+		height: var(--logo-heigth);
 	}
 
 	#minimized-navbar .logo {
@@ -93,6 +101,7 @@
 
 	body {
 		padding-top: 0px !important;
+		margin-top: var(--full-navbar-height);
 	}
 
 	.floating-dropdown-list {
@@ -107,6 +116,10 @@
 @media (orientation: portrait) {
 	:root {
 		--minimized-navbar-height: 4rem;
+	}
+
+	body {
+		margin-top: var(--minimized-navbar-height);
 	}
 
 	#full-navbar {
