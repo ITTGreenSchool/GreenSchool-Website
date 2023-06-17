@@ -73,11 +73,13 @@
 .post-content h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    font-family: Raleway-Bold;
 }
 
 .descrizione {
     font-size: 18px;
     color: #00B1FF;
+    font-family: Raleway-Regular;
 }
 
 .post .post-img {
