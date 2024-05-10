@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Project</title>
+    <meta charset="utf-8" lang="it">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/project.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/arrow.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../../common/css/fonts.css">
+    <link rel="shortcut icon" type="image/png" href="../../../img/GreenSchoolsFavIcon/GS-PROFILE-IMAGE.jpg">
+
+    <!------------------------------------SUPPORTO--------------------------------------------->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!----------------------------------------------------------------------------------------->
+    
+    <script defer type="text/javascript" src="../js/slideshow.js"></script>
+    <script defer type="text/javascript" src="../js/slideshow-chisiamo.js"></script>
+    <script defer type="text/javascript" src="../../common/js/navbar.js"></script>
+    
+    <script defer type="text/javascript" src="../js/go-top-image-fade-animation.js"></script>
+
+</head>
+<body>
+
+    <div class="loader hidden">
+        <img src="../../../img/GreenSchoolsLoadingAnimation/animation-project.gif" alt="loading-animation">
+    </div>
+
+    <nav id="full-navbar" style="background-color: #FF6D4B;">
+      
+        <nav id="minimized-navbar">
+            <!--Chehckbox to open side menu on portrait view-->
+            <a href="../index.html"><img class="logo" src="../../../img/GreenSchoolsButton/iisvv.png" alt=""></a>
+            <div id="navbar-competition-title">Competizione X</div>
+            <img src="../../../img/GreenSchoolsButton/3lines.png" alt="3lines" onclick="toggleSideMenu()" id="sidemenu-opener">
+        </nav>
+
+        <nav id="main-navbar-section" style="background-color: #FF6D4B;">
+            <li><a class="main-navbar-link" href="../index.html">Home</a></li>
+            <li><a class="act main-navbar-link" href="./project.html">Il Progetto</a></li>
+            <li><a class="main-navbar-link" href="./study.html">Lo Studio</a></li>
+            <li><a class="main-navbar-link" href="./goodPractise.html">Buone Pratiche</a></li>
+            <li><a class="main-navbar-link" href="./app.html">L'app</a></li>
+            <li class="floating-dropdown-list-opener">
+                <a href="#" class="main-navbar-link">Competizioni</a>
+                <ul class="floating-dropdown-list">
+                    <li><a class="act main-navbar-link" href="../index.html">X</a></li>
+                    <li><a class="main-navbar-link" href="../../competitionIX/index.html">IX</a></li>
+                </ul>
+            </li>
+        </nav>
+
+    </nav>
+
+    <div>
+        <img src="../../../img/GreenSchoolsGeneralcon/project.svg" alt="study-page-image" class="proj-svg">
+        <p class="project-title" style="margin-bottom: 10px;">IL PROGETTO</p>
+        <p class="slider-info-project" style="color: #FF6D4B">SCORRI PER INIZIARE</p>
+        <div class="scroll-page-div" >
+            <a href="#prj-text" class="scroll-home-page"><img src="../../../img/GreenSchoolsGeneralcon/arrow-orange.svg" alt="arrow" class="arrow-svg"></a>
+        </div>    
+    </div>
+
+    <div class="prj-text" style="background-color: #ff6d4b;">
+        <h1  id = "prj-text"   data-aos="zoom-in">In cosa consiste?</h1>
+        <p data-aos="fade-down">Il nostro progetto punta allo sviluppo di un mezzo di trasporto pesante <br>
+        chiamato: <strong>Nova</strong>, un camion elettrico che si ricarica attraverso battery-swap.</p>
+
+        <div class="slideshow-container" data-aos="fade-in">
+
+            <div class="mySlides fade">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/nova-slideshow/2nd.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/nova-slideshow/1st.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slideshow-image" src="../../../img/GreenSchoolsGeneralImage/nova-slideshow/3rd.png" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center; padding-bottom: 3%;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <p style="padding-top: 2%  !important;" data-aos="fade-down">Visto l’ingente quantitativo di energia necessaria,<br> sono stati fissati dei "paletti"
+                per rendere la cosa <br>più realistica.
+ 
+            </p>
+        </div>
+
+    </div>
+
+    <div class="limit-section">
+
+        <p class="limit-section-title" data-aos="fade-down">Scopri i paletti!</p>
+
+        <div class="limit-items" style="padding-top: 5%;">
+
+            <div class="limit-item fade-in fromSX" data-aos="fade-down">
+                <div class="limit-content">
+               
+                    <div class="limit-image">
+                        
+                        <img src="../../../img/GreenSchoolsLimit/20222023/axialflux.png">
+
+                    </div>
+
+                    <div class="limit-text">
+                        <p>Motori axial flux:</p>
+                        <ul class="limit-list">
+                            <li>Potenza 250KW</li>
+                            <li>Totali 750KW</li>
+                        </ul>
+
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="limit-item dxLimit" data-aos="fade-down">
+                <div class="limit-content">
+               
+                    <div class="limit-image">
+                        
+                        <img src="../../../img/GreenSchoolsLimit/20222023/cambioigear2.png">
+
+                    </div>
+
+                    <div class="limit-text">
+                        <p>Cambio Igear 2</p>
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="limit-item sxLimit" data-aos="fade-down">
+                <div class="limit-content">
+               
+                    <div class="limit-image">
+                        
+                        <img src="../../../img/GreenSchoolsLimit/20222023/batteria.png">
+
+                    </div>
+
+                    <div class="limit-text">
+                        <p>Batterie:</p>
+                        <ul class="limit-list">
+                            <li>4 pacchi da 500KWh</li>
+                            <li>Totale 2000KWh</li>
+                        </ul>
+
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="limit-item dxLimit" data-aos="fade-down">
+                <div class="limit-content">
+               
+                    <div class="limit-image">
+                        
+                        <img src="../../../img/GreenSchoolsLimit/autonomy.png">
+
+                    </div>
+
+                    <div class="limit-text">
+                        <p>Autonomia:</p>
+                        <ul class="limit-list">
+                            <li>1050km con 64t</li>
+                            <li>1500km con 40t</li>
+                        </ul>
+
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="background-color: #ff6d4b;">
+        <p class="teamParag" data-aos="fade-down">Ecco i diversi componenti dell'...</p>
+
+        <h1 data-aos="fade-down" class="teamTitle" id="goodPract-text">Energy Team</h1>
+        
+        <!--METTERE I NOMI-->
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/ghironi.png">
+                <p class="personTeamName">Ghironi Alessandro</p>
+                <p class="personTeamText">WalkVV (Front-End), <br>gestione sito e coordinamento</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/ballarin.png">
+                <p class="personTeamName">Ballarin Pietro</p>
+                <p class="personTeamText">WalkVV (Back-End) <br>e coordinamento</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/ianotto.png">
+                <p class="personTeamName">Ianotto Lorenzo</p>
+                <p class="personTeamText">WalkVV (Front-End) e<br>gestione sito</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/de_nardi.png">
+                <p class="personTeamName">De Nardi Lorenzo</p>
+                <p class="personTeamText">WalkVV (Front-End) e<br>gestione sito</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/frassinelli.png">
+                <p class="personTeamName">Frassinelli Filippo</p>
+                <p class="personTeamText">WalkVV (Back-End)</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/falcomer2.png">
+                <p class="personTeamName">Falcomer Nicola</p>
+                <p class="personTeamText">Podcast</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/falcomer1.png">
+                <p class="personTeamName">Falcomer Angelo</p>
+                <p class="personTeamText">Podcast</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/single/comp/Davide Maria Meneghin-min.png">
+                <p class="personTeamName">Meneghin Davide Maria</p>
+                <p class="personTeamText">Podcast</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/meneghing.png">
+                <p class="personTeamName">Meneghin Giorgia</p>
+                <p class="personTeamText">Gestione Social</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/fontana.png">
+                <p class="personTeamName">Fontana Lyn Sara</p>
+                <p class="personTeamText">Gestione Social</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/illenupi.png">
+                <p class="personTeamName">Illenupi Sabrina</p>
+                <p class="personTeamText">Presentazione Rekeep</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/tarantino.png">
+                <p class="personTeamName">Tarantino Sonia</p>
+                <p class="personTeamText">Presentazione Rekeep</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/fabiano.png">
+                <p class="personTeamName">Fabiano Davide</p>
+                <p class="personTeamText">Presentazione orto</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/nafta.png">
+                <p class="personTeamName">Nfafta Imane</p>
+                <p class="personTeamText">Salute del Meschio</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/dal_fabbro.png">
+                <p class="personTeamName">Dal Fabbro Lorenzo</p>
+                <p class="personTeamText">Consumi scuola e domotica</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/segat.png">
+                <p class="personTeamName">Riccardo Segat</p>
+                <p class="personTeamText">Peer Education e aiuto Nova</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/manighetti.png">
+                <p class="personTeamName">Manighetti Stefano</p>
+                <p class="personTeamText">Peer Education e aiuto Nova</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/traore.png">
+                <p class="personTeamName">Traore Yasmine</p>
+                <p class="personTeamText">Salute del Meschio</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/bin.png">
+                <p class="personTeamName">Bin Gabriele</p>
+                <p class="personTeamText">Studio di "Nova"<br>‎‎</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-down">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/merotto.png">
+                <p class="personTeamName">Merotto Raul</p>
+                <p class="personTeamText">Aiuto sviluppo WalkVV<br>e presentazione</p>
+
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+            <div class="personTeam" data-aos="fade-up">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/gallon.png">
+                <p class="personTeamName">Gallon Tommaso</p>
+                <p class="personTeamText">Aiuto sviluppo WalkVV<br>e presentazione</p>
+
+            </div>
+
+            <div class="personTeam" data-aos="fade-up">
+
+                <img class="personImage" src="../../../img/GreenSchoolsTeam/202220223/borgato.png">
+                <p class="personTeamName">Borgato Amerigo</p>
+                <p class="personTeamText">Consumi scuola e domotica<br>‎‎</p>
+                                                                <!--DA FIXARE-->
+            </div>
+
+        </div>
+
+        <div class="teamPeople">
+
+
+
+        </div>
+
+
+    </div>
+    </div>
+    
+
+    <footer>
+        <div class="links-section-row">
+            <div class="links-section-col">
+                <h3>Scuola</h3>
+                <div class="links-list">
+                    <a
+                        href="http://www.iisvittorioveneto.edu.it/"
+                        target="_blank"
+                        >I.I.S. "Città della Vittoria"</a
+                    >
+                    <a>Via Vittorio Emanuele II, 97</a>
+                    <a>31029 Vittorio Veneto, TV</a>
+                </div>
+            </div>
+    
+            <div class="links-section-col">
+                <h3>Provincia</h3>
+                <div class="links-list">
+                    <a>Progetto</a>
+                    <a
+                        href="https://www.trevisoscuole.it/green-schools-competition-2-2/"
+                        target="_blank"
+                        >Green Schools</a
+                    >
+                    <a>Collaborazione con la </a>
+                    <a
+                        href="https://www.trevisoscuole.it/green-schools-competition-2-2/"
+                        target="_blank"
+                        >Provincia di Treviso</a
+                    >
+                </div>
+            </div>
+    
+            <div class="links-section-col">
+                <h3>Seguici</h3>
+                <div class="links-list socials-list">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100077519273791"
+                        target="_blank"
+                        ><img
+                            src="../../../img/GreenSchoolsSocialIcon/svg/facebook.svg"
+                            alt="facebook"
+                            class="social-icon"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/energyteamittvv/"
+                        target="_blank"
+                        ><img
+                            src="../../../img/GreenSchoolsSocialIcon/svg/instagram.svg"
+                            alt="instagram"
+                            class="social-icon"
+                    /></a>
+                    <a
+                        href="https://twitter.com/EnergyTeamITTVV"
+                        target="_blank"
+                        ><img
+                            src="../../../img/GreenSchoolsSocialIcon/svg/twitter.svg"
+                            alt="twitter"
+                            class="social-icon"
+                    /></a>
+                    <a
+                        href="https://www.tiktok.com/@energyteamiisvv"
+                        target="_blank"
+                        ><img
+                            src="../../../img/GreenSchoolsSocialIcon/svg/tiktok.svg"
+                            alt="tik-tok"
+                            class="social-icon"
+                    /></a>
+                    <a
+                        href="http://www.iisvittorioveneto.edu.it/"
+                        target="_blank"
+                        ><img
+                            src="../../../img/GreenSchoolsSocialIcon/png/IISVV_social.png"
+                            alt="school-site"
+                            class="social-icon"
+                    /></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom-section">
+            <small>
+                <p>GreenSchools è un progetto inserito nel piano dell'offerta formativa dell'istituto "Vittorio Veneto" Città della Vittoria di Vittorio Veneto.</p>
+                <p>Referente prof. Montoro Francesco: <a href="mailto:francesco.montoro@iisvittorioveneto.it">francesco.montoro@iisvittorioveneto.it</a></p>
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
